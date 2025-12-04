@@ -303,7 +303,7 @@
 		<jsoup.version>1.21.2</jsoup.version>
 
 		<!-- Protobuf -->
-		<protobuf-java.version>3.25.8</protobuf-java.version>
+		<protobuf-java.version>4.33.1</protobuf-java.version>
 
 		<!-- readers/writer/stores dependencies-->
 		<pdfbox.version>3.0.5</pdfbox.version>
@@ -314,7 +314,7 @@
 		<gemfire.testcontainers.version>2.3.3</gemfire.testcontainers.version>
 
 		<pinecone.version>4.0.1</pinecone.version>
-		<pinecone.protobuf-java-util.version>4.29.3</pinecone.protobuf-java-util.version>
+		<pinecone.protobuf-java-util.version>4.33.1</pinecone.protobuf-java-util.version>
 
 		<fastjson2.version>2.0.46</fastjson2.version>
 		<azure-core.version>1.55.3</azure-core.version>
@@ -1070,6 +1070,22 @@
 				<version>${mcp.sdk.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<!-- Security vulnerability fixes -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>3.18.0</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-core</artifactId>
+				<version>1.5.19</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>1.5.19</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
